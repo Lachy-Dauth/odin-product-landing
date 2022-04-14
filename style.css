@@ -22,7 +22,7 @@ header {
 
 header > p {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 header > ul {
@@ -32,7 +32,7 @@ header > ul {
 
 header > ul > li {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 header > ul > li > a {
@@ -43,12 +43,12 @@ header > ul > li > a {
 section {
   padding: 32px;
   display: flex;
-  gap: 32px;
 }
 
 #about {
   background-color: var(--navy);
   flex-wrap: wrap;
+  gap: 32px;
 }
 
 .para {
@@ -63,6 +63,8 @@ section {
   font-size: 1.05rem;
   background-color: var(--blue);
   padding: 8px 24px;
+  width: max-content;
+  flex-shrink: 0;
 }
 
 .signup:hover {
@@ -93,6 +95,7 @@ h2 {
   font-size: 36px;
   font-weight: 900;
   margin-bottom: 32px;
+  color: var(--navy);
 }
 
 img {
@@ -121,9 +124,65 @@ img {
   text-align: center;
   width: 200px;
   flex-direction: column;
+  color: rgb(80, 80, 80);
 }
 
 .randimg {
   width: 100px;
   height: 100px;
+}
+
+#quote {
+  background-color: var(--header-link-white);
+  color: var(--navy);
+  flex-direction: column;
+  padding: 48px 32px 32px 32px;
+}
+
+.quote {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0px;
+}
+
+.author {
+  margin: 0px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.blue-tab {
+  border-radius: 8px;
+  border: none;
+  color: var(--header-white);
+  width: 100%;
+  background-color: var(--blue);
+  padding: 32px 64px;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.white-border {
+  border: 2px solid var(--header-white);
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.sign-text > p {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  background-color: var(--navy);
+  color: var(--header-white);
 }
